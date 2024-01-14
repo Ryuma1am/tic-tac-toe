@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #0d060f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .5rem;
+}
+main section{
+    width: 80%;
+    height: 60%;
+    max-width: 25rem;
+    max-height: 20rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+main section button{
+    width: 1fr;
+    height: 1fr;
+    background-color: #2a9d8f;
+    font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board__cell:hover{
+    background-color: #000;  
+}
+.border__bottom{
+    border-bottom: .3125rem solid #fb8500;
+}
+.border__right{
+    border-right: .3125rem solid #fb8500;
+}
+.border__left{
+    border-left: .3125rem solid #fb8500;;
+}
+h2{
+    color: #fff;
+    font-weight: lighter;
+    font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.turn{
+    font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+}
+footer button{
+    background-color: #e76f51;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .5rem;
+}
+footer button img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+}
+.board__off{
+    pointer-events: none;
+}
+.board__cell__off{
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal__container{
+    width: 80%;
+    height: 30%;
+    max-width: 20rem;
+    max-height: 20rem;
+    border: 2px solid #fff;
+}
+.modal__container header{
+    height: 30%;
+    background-color: #00607a;
+    padding: .5rem;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.modal__container header h2{
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+}
+.modal__container div{
+    height: 70%;
+    background-color: #066839;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.modal__container div p,
+.modal__container div span{
+    font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    color: #fff;
+    text-align: center;
+}
+.modal__container div button{
+    background-color: #000e14;
+    border-radius: .5rem;
+    width: 5rem;
+    height: 2rem;
+    color: #fff;
+    font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+}
+.modal__off{
+    display: none;
+}

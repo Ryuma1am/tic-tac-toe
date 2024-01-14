@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h2>
+                Tic Tac Toe
+            </h2>
+            <br>
+            <h2><span>Turn of:</span><span class="turn">X</span></h2>
+        </header>
+        <section class="board">
+            <button class="border__bottom border__right board__cell" value="N"></button>
+            <button class="border__bottom board__cell " value="N"></button>
+            <button class="border__bottom border__left board__cell " value="N"></button>
+            <button class="border__bottom border__right board__cell " value="N"></button>
+            <button class="border__bottom board__cell " value="N"></button>
+            <button class="border__bottom border__left board__cell " value="N"></button>
+            <button class="boardCell border__right board__cell " value="N"></button>
+            <button class="boardCell board__cell " value="N"></button>
+            <button class="boardCell border__left board__cell " value="N"></button>
+        </section>
+        <footer>
+            <button class="reset"><img src="img/arrow-clockwise.svg" alt="Resset the game"></button>
+            <h2></h2>
+        </footer>
+    </main>
+    <section class="modal modal__off">
+        <article class="modal__container">
+            <header>
+                <h2>TIC TAC TOE GAME COMPLETED</h2>
+            </header>
+            <div>
+                <p>The result is: <span class="who__won"></span></p>
+                <button class="close__modal">Close</button>
+            </div>
+        </article>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
